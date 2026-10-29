@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Retailer Dashboard | RAFIN{% endblock %}{% block content %}
+<div class="card shadow-sm"><div class="card-body p-4"><h2>স্বাগতম, {{ user.name }}!</h2><p>আপনার Retailer ID:</p><div class="display-6 fw-bold text-primary">{{ user.retailer_id }}</div><p class="text-muted mt-3">এই ডেমোতে PAN application বা payment feature সক্রিয় নয়।</p><a class="btn btn-outline-secondary" href="{{ url_for('logout') }}">Logout</a></div></div>{% endblock %}
